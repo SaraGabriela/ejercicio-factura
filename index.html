@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Factura</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+<div class="row" id="vistaCliente">
+	<div class="container">
+		<h1>Paso 1: Datos de cliente</h1>
+			<label>Razón social:</label>
+			<input class="form-control"></input>
+			<label>Nombre:</label>
+			<input class="form-control"></input>
+			<label>RUC:</label>
+			<input class="form-control"></input>
+			<button class="btn btn-primary" onclick="datosCliente()">Siguiente</button>
+	</div>
+</div>
+<div id="vistaAdministra" class="row">
+	<div class="container">
+		<h2>Paso 2: Datos de empresa</h2>
+		<label>Producto:</label>
+		<select class="form-control">
+			<option>Producto 1</option>
+			<option>Producto 2</option>
+			<option>Producto 3</option>
+		</select>
+		<label>Cantidad:</label>
+		<input></input><br>
+		<label>Precio Unitario:</label>
+		<input></input>
+		<button class="btn btn-primary">Agregar</button>
+		<hr>
+	</div>
+	<div class="container">
+		<h3>Productos registrados</h3>
+		<table class="table">
+			<tr>
+				<th>Producto</th>
+				<th>Cantidad</th>
+				<th>Precio</th>
+				<th>Editar</th>
+				<th>Eliminar</th>
+			</tr>
+			<tr></tr>
+			<tr>
+				<th colspan="2">Total</th>
+				<td></td>
+			</tr>
+		</table>
+		<div class="row">
+		<button class="btn btn-primary" onclick="regresaClient()">Anterior</button>
+		<button class="btn btn-primary" onclick="datosProductos()">Siguiente</button>
+		</div>
+	</div>
+</div>
+<div class="row" id="factura">
+	<div class="container">
+		<div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-2">
+					<img src="images/logo-minimal.png">
+				</div>
+				<div class="col-md-2">
+				<div>
+					<h4>RUC:<span></span></h3>
+					<h3>FACTURA</h2>
+				</h3>	
+				</div>
+			</div>
+			<div class="row">
+				<label>Nombre:</label>
+				<p><span></span></p>
+				<label>RUC:</label>
+				<p><span></span></p>				
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
